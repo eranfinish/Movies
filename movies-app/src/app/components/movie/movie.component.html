@@ -1,0 +1,13 @@
+<div class="movie-item" ngClass="{{selected? 'selected':''}}"
+(click)="toggleSelected()">
+  <h4>{{movie.Title}}</h4>
+  <div class="poster">
+    <img src="{{movie.Poster}}" alt=""  />
+  </div>
+  <div class="details">
+
+    <label class="year">{{movie.Year}}</label>
+  </div>
+</div>
+
+<!-- TODO write template code -->

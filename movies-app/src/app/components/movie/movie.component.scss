@@ -1,0 +1,22 @@
+.movie-item{
+  display: flex;
+  justify-content: unset;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  flex-direction: column;
+}
+.movie-item h4{
+  font-size: small;
+  line-height: 1em;
+}
+.movie-item:hover{
+  background-color: hwb(230 72% 4%);
+}
+
+.selected{
+  background-color: hwb(230 72% 4%);
+}
+.poster img{
+  width: 50px;
+}
+// TODO write style code

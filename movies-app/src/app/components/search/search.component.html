@@ -1,0 +1,15 @@
+
+<div class="search-panel">
+  <input type="text" placeholder="Search for a movie"
+  (keydown.enter)="getMovies()"
+   (input)="searchMovies($event)">
+  <button (click)="getMovies()">Search</button>
+  <h5 *ngIf="!error.Response"> {{error.Error}} </h5>
+<div>
+<div *ngIf="error.Response && response.length > 0"  class="movie-list">
+  <div  *ngFor="let movie of response">
+    <app-movie [movie]="movie" [selected] ="movie === selectedItem" (click)="toggleSelect(movie)"></app-movie>
+  </div>
+</div>
+</div>
+<app-movie-details *ngIf="selectedItem.imdbID != ''" [movieId]="selectedItem.imdbID"></app-movie-details>
