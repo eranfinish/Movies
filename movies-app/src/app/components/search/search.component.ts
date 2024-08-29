@@ -13,9 +13,11 @@ import { ChangeDetectorRef } from '@angular/core';
 export class SearchComponent {
     // TODO implement component
     searchInput: string = '';
+ 
     response:Array<Movie> = [];
     selectedItem: Movie = new Movie();
     error: errorResponse = new errorResponse();
+
     constructor(private apiService:ApiService, private cdr:ChangeDetectorRef) { }
     async searchMovies(event : any): Promise<void> {
        this.searchInput = event.target.value;

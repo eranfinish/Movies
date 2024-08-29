@@ -1,4 +1,4 @@
-export class moviedetails{
+export class MovieDetails{
     Title: string = "";
     Poster: string= "";
     Year: string= "";
@@ -8,6 +8,8 @@ export class moviedetails{
     Director: string = "";
     Actors: string = "";
     Plot: string = "";
+    Country: string = "";
+    Type: string = "";
 }
 /*
 Actors:"Mayumi Tanaka, Keiko Yokozawa, Kotoe Hatsui"

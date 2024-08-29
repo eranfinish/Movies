@@ -1,2 +1,37 @@
 
 <!-- TODO write template code -->
+<div class="movie-details-skeleton" [hidden]="">
+    <div class="skeleton-title"></div>
+    <div class="skeleton-poster">
+        <div class="skeleton-image"></div>
+    </div>
+    <div class="skeleton-plot"></div>
+    <div class="skeleton-info">
+        <ul>
+            <li class="skeleton-item"></li>
+            <li class="skeleton-item"></li>
+        </ul>
+    </div>
+</div>
+
+<div class="movie-details" ngClass="{{movieDetails.Type}}">
+    
+    <h1>{{movieDetails.Title}}</h1>
+    <div class="poster">
+        <img src="{{movieDetails.Poster}} ({{movieDetails.Year}}) alt={{movieDetails.Title}}">        
+    </div>
+<div>
+    {{movieDetails.Plot}}
+</div>
+    <div>
+        <ul>
+            <li>
+                Country: {{movieDetails.Country}}
+            </li>
+            <li>
+                Genre: {{movieDetails.Genre}}
+            </li>
+        
+        </ul>
+    </div>
+</div>

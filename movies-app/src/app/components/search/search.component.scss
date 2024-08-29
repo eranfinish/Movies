@@ -1,15 +1,53 @@
+.movie-details, .search-content{
+  display: inline-block;
+}
+.container{
+  display: flex;
+
+}
+.movie-details{
+  max-width: 30vw;
+  padding: 0 5vw;
+}
 div{
   color:black;
 }
 
 .search-panel{
+  display: inline-block;
   margin-top: 15vh;
   margin-left: 2vw;
 }
+.search-content{
+  direction: rtl;
+  box-shadow: -7px 3px 7px #ccc;
+  border-radius: 5px;
+}
 .movie-list{
-  max-height: 300px;
+  overflow-y: scroll; 
+  max-height: 75vh;
   width: 230px;
-  overflow: auto;
+ 
+direction: ltr;
+
+  &::-webkit-scrollbar {
+    width:10px;
+    direction: trl;
+  }
+  &::-webkit-scrollbar-track {
+    background: #978f8fa8;  // Scrollbar track color
+    border-radius: 10px; /* Rounds the corners of the scrollbar track */
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: hsl(0, 0%, 53%); // Scrollbar thumb color
+    border-radius: 10px;
+  }
+  
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: #555;  // Thumb color on hover
+  }
 }
 
 // TODO write style code
