@@ -3,7 +3,7 @@
     border-radius: 13px;
     overflow: hidden;
     height: 50vh;
-    width: 33vw;
+    width: 15vw;
 }
 .poster img{
     height: 50vh;
@@ -15,7 +15,7 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
-  
+
     .skeleton-title,
     .skeleton-plot,
     .skeleton-item {
@@ -25,23 +25,23 @@
       height: 20px;
       animation: pulse 1.5s infinite ease-in-out;
     }
-  
+
     .skeleton-title {
       height: 30px; /* Slightly taller for title */
       width: 60%; /* Adjust width for a more title-like skeleton */
     }
-  
+
     .skeleton-poster {
         display: flex;
         justify-content: center;
         align-items: center;
         height: 50vh;
-        width: 33vw;
+        width: 15vw;
         background-color: #e0e0e0;
         border-radius: 8px;
         overflow: hidden;
         animation: pulse 1.5s infinite ease-in-out;
-  
+
       .skeleton-image {
         width: 33vw;
         height: 50vh;
@@ -49,16 +49,16 @@
         border-radius: 8px;
       }
     }
-  
+
     .skeleton-plot {
       height: 60px; /* Taller height for plot description */
       width: 90%;
     }
-  
+
     .skeleton-info ul {
       padding: 0;
       list-style: none;
-  
+
       .skeleton-item {
         margin-bottom: 10px;
         height: 20px;
@@ -66,7 +66,7 @@
       }
     }
   }
-  
+
   @keyframes pulse {
     0% {
       background-color: #e0e0e0;
@@ -78,4 +78,3 @@
       background-color: #e0e0e0;
     }
   }
-  

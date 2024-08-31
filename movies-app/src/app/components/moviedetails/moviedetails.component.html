@@ -1,6 +1,7 @@
 
 <!-- TODO write template code -->
-<div class="movie-details-skeleton" [hidden]="">
+ <div>{{loadDetails}}</div>
+<div class="movie-details-skeleton" *ngIf="loadDetails">
     <div class="skeleton-title"></div>
     <div class="skeleton-poster">
         <div class="skeleton-image"></div>
@@ -14,11 +15,11 @@
     </div>
 </div>
 
-<div class="movie-details" ngClass="{{movieDetails.Type}}">
-    
+<div class="movie-details" ngClass="{{movieDetails.Type}}" [hidden]="loadDetails">
+
     <h1>{{movieDetails.Title}}</h1>
     <div class="poster">
-        <img src="{{movieDetails.Poster}} ({{movieDetails.Year}}) alt={{movieDetails.Title}}">        
+        <img src="{{movieDetails.Poster}} ({{movieDetails.Year}}) alt={{movieDetails.Title}}">
     </div>
 <div>
     {{movieDetails.Plot}}
@@ -31,7 +32,7 @@
             <li>
                 Genre: {{movieDetails.Genre}}
             </li>
-        
+
         </ul>
     </div>
 </div>

@@ -1,22 +1,91 @@
-.movie-item{
+.movie-item {
   display: flex;
   justify-content: unset;
   padding: 10px;
   border-bottom: 1px solid #ccc;
   flex-direction: column;
+
+  &:hover {
+    background-color: #c4cacb;
+
+    & .selected {
+      background-color: #d6e3e5;
+    }
+  }
 }
-.movie-item h4{
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.movie-item h4 {
   font-size: small;
   line-height: 1em;
 }
-.movie-item:hover{
-  background-color: #c4cacb;
-}
 
-.selected{
+.selected {
   background-color: #d6e3e5;
 }
-.poster img{
+
+.poster img {
   width: 50px;
 }
-// TODO write style code
+
+// Media queries for responsiveness
+@media (min-width: 576px) {
+  .movie-item {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .poster img {
+    width: 75px;
+  }
+
+  .movie-item h4 {
+    font-size: medium;
+  }
+}
+
+@media (min-width: 768px) {
+  .movie-item {
+    padding: 15px;
+  }
+
+  .poster img {
+    width: 100px;
+  }
+
+  .movie-item h4 {
+    font-size: large;
+  }
+}
+
+@media (min-width: 992px) {
+  .movie-item {
+    padding: 20px;
+  }
+
+  .poster img {
+    width: 125px;
+  }
+
+  .movie-item h4 {
+    font-size: x-large;
+  }
+}
+
+@media (min-width: 1200px) {
+  .movie-item {
+    padding: 25px;
+  }
+
+  .poster img {
+    width: 150px;
+  }
+
+  .movie-item h4 {
+    font-size: xx-large;
+  }
+}

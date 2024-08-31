@@ -10,6 +10,7 @@ export class MovieDetails{
     Plot: string = "";
     Country: string = "";
     Type: string = "";
+    Favorite:boolean = false;
 }
 /*
 Actors:"Mayumi Tanaka, Keiko Yokozawa, Kotoe Hatsui"

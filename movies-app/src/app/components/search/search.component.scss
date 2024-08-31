@@ -24,10 +24,10 @@ div{
   border-radius: 5px;
 }
 .movie-list{
-  overflow-y: scroll; 
+  overflow-y: auto;
   max-height: 75vh;
   width: 230px;
- 
+
 direction: ltr;
 
   &::-webkit-scrollbar {
@@ -43,7 +43,7 @@ direction: ltr;
     background: hsl(0, 0%, 53%); // Scrollbar thumb color
     border-radius: 10px;
   }
-  
+
 
   &::-webkit-scrollbar-thumb:hover {
     background: #555;  // Thumb color on hover
