@@ -26,9 +26,12 @@ div{
 .movie-list{
   overflow-y: auto;
   max-height: 75vh;
-  width: 230px;
+  width: 95vw;
+  direction: ltr;
+  display: flex;
+  flex-wrap: wrap;
 
-direction: ltr;
+
 
   &::-webkit-scrollbar {
     width:10px;

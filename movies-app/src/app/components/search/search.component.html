@@ -10,9 +10,11 @@
   <div class="container">
     <div class="search-content">
       <div *ngIf="error.Response && response.length > 0"  class="movie-list">
-        <div  *ngFor="let movie of response">
-          <app-movie [movie]="movie" [selected] ="movie === selectedItem" (click)="toggleSelect(movie)"></app-movie>
-        </div>
+
+          <app-movie [movie]="movie" *ngFor="let movie of response"
+          [selected] ="movie === selectedItem"
+          (click)="toggleSelect(movie)"></app-movie>
+        
       </div>
     </div>
     <app-movie-details class="movie-details" *ngIf="selectedItem.imdbID != ''" [movieId]="selectedItem.imdbID"></app-movie-details>

@@ -1,9 +1,8 @@
 .movie-item {
-  display: flex;
-  justify-content: unset;
-  padding: 10px;
+
   border-bottom: 1px solid #ccc;
-  flex-direction: column;
+  width: 126px;
+  overflow: hidden;
 
   &:hover {
     background-color: #c4cacb;
@@ -22,10 +21,21 @@ a {
 .movie-item h4 {
   font-size: small;
   line-height: 1em;
+  margin-bottom: 5px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 100%;
 }
 
 .selected {
   background-color: #d6e3e5;
+}
+
+.poster{
+  height: 175px;
+    width: 125px;
+    overflow: hidden;
 }
 
 .poster img {
@@ -72,7 +82,7 @@ a {
   }
 
   .movie-item h4 {
-    font-size: x-large;
+    font-size: 15px;
   }
 }
 
